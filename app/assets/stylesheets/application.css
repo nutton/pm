@@ -52,6 +52,9 @@
     border: 1px dashed #634f36; /* Добавление пунктирной рамки */
     margin: 0; /* Убираем поля */
    }
+   .active {
+       background-color: #cccccc;
+   }
    #content { /* Правая колонка */
     margin: 10px 5px 20px 225px; /* Значения отступов */
     padding: 5px; /* Поля вокруг текста */
