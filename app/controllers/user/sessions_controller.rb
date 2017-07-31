@@ -3,6 +3,7 @@ class User::SessionsController < Devise::SessionsController
 
   # GET /resource/sign_in
    def new
+     layout 'static/login'
      super
    end
 
