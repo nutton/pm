@@ -8,8 +8,9 @@
   </head>
 
   <body>
+  <% if user_signed_in? %>
     <div class="head">
-	header place
+	    header place
     </div>
 	<div id="menu">
 		<%= render 'static/menu' %>
@@ -20,5 +21,10 @@
     <div id="foot">
 		footer
 	</div>
+      <% else %>
+        <div class="login_box">
+          <%= yield %>
+        </div>
+      <% end %>
   </body>
 </html>
