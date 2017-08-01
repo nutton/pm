@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vendor:</strong>
+  <%= @configuration.vendor_id %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @configuration.active %>
+</p>
+
+<p>
+  <strong>Configuration:</strong>
+  <%= @configuration.configuration_id %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @configuration.model %>
+</p>
+
+<p>
+  <strong>Partnumber:</strong>
+  <%= @configuration.partnumber %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @configuration.comment %>
+</p>
+
+<p>
+  <strong>Dept:</strong>
+  <%= @configuration.dept_id %>
+</p>
+
+<%= link_to 'Edit', edit_configuration_path(@configuration) %> |
+<%= link_to 'Back', configurations_path %>

@@ -1,0 +1,52 @@
+<%= form_with(model: configuration, local: true) do |form| %>
+  <% if configuration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(configuration.errors.count, "error") %> prohibited this configuration from being saved:</h2>
+
+      <ul>
+      <% configuration.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :vendor_id %>
+    <%= form.number_field :vendor_id, id: :configuration_vendor_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :active %>
+    <%= form.number_field :active, id: :configuration_active %>
+  </div>
+
+  <div class="field">
+    <%= form.label :configuration_id %>
+    <%= form.number_field :configuration_id, id: :configuration_configuration_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :model %>
+    <%= form.text_field :model, id: :configuration_model %>
+  </div>
+
+  <div class="field">
+    <%= form.label :partnumber %>
+    <%= form.text_field :partnumber, id: :configuration_partnumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comment %>
+    <%= form.text_area :comment, id: :configuration_comment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dept_id %>
+    <%= form.number_field :dept_id, id: :configuration_dept_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

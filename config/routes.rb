@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :configurations
   resources :vendors
   root to: 'static#root'
   # devise_scope :user do
