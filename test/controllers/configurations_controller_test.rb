@@ -17,7 +17,7 @@ class ConfigurationsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create configuration" do
     assert_difference('Configuration.count') do
-      post configurations_url, params: { configuration: { active: @configuration.active, comment: @configuration.comment, configuration_id: @configuration.configuration_id, dept_id: @configuration.dept_id, model: @configuration.model, partnumber: @configuration.partnumber, vendor_id: @configuration.vendor_id } }
+      post configurations_url, params: { configuration: { active: @configuration.active, comment: @configuration.comment, dept_id: @configuration.dept_id, model: @configuration.model, parent_id: @configuration.parent_id, partnumber: @configuration.partnumber, vendor_id: @configuration.vendor_id } }
     end
 
     assert_redirected_to configuration_url(Configuration.last)
@@ -34,7 +34,7 @@ class ConfigurationsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update configuration" do
-    patch configuration_url(@configuration), params: { configuration: { active: @configuration.active, comment: @configuration.comment, configuration_id: @configuration.configuration_id, dept_id: @configuration.dept_id, model: @configuration.model, partnumber: @configuration.partnumber, vendor_id: @configuration.vendor_id } }
+    patch configuration_url(@configuration), params: { configuration: { active: @configuration.active, comment: @configuration.comment, dept_id: @configuration.dept_id, model: @configuration.model, parent_id: @configuration.parent_id, partnumber: @configuration.partnumber, vendor_id: @configuration.vendor_id } }
     assert_redirected_to configuration_url(@configuration)
   end
 

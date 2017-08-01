@@ -15,6 +15,7 @@ class ConfigurationsController < ApplicationController
   # GET /configurations/new
   def new
     @configuration = Configuration.new
+    @configuration.parent_id = -1
   end
 
   # GET /configurations/1/edit
@@ -25,7 +26,8 @@ class ConfigurationsController < ApplicationController
   # POST /configurations.json
   def create
     @configuration = Configuration.new(configuration_params)
-
+    @configuration.dept_id = current_user.dept_id
+    #@configuration.parent_id
     respond_to do |format|
       if @configuration.save
         format.html { redirect_to @configuration, notice: 'Configuration was successfully created.' }
@@ -69,6 +71,6 @@ class ConfigurationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def configuration_params
-      params.require(:configuration).permit(:vendor_id, :active, :configuration_id, :model, :partnumber, :comment, :dept_id)
+      params.require(:configuration).permit(:vendor_id, :active, :parent_id, :model, :partnumber, :comment, :dept_id)
     end
 end

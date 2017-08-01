@@ -3,7 +3,7 @@
 one:
   vendor_id: 1
   active: 1
-  configuration_id: 1
+  parent_id: 1
   model: MyString
   partnumber: MyString
   comment: MyText
@@ -12,7 +12,7 @@ one:
 two:
   vendor_id: 1
   active: 1
-  configuration_id: 1
+  parent_id: 1
   model: MyString
   partnumber: MyString
   comment: MyText
