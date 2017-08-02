@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sitename:</strong>
+  <%= @site.sitename %>
+</p>
+
+<p>
+  <strong>Siteaddress:</strong>
+  <%= @site.siteaddress %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @site.city_id %>
+</p>
+
+<p>
+  <strong>Internal site:</strong>
+  <%= @site.internal_site %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @site.customer_id %>
+</p>
+
+<%= link_to 'Edit', edit_site_path(@site) %> |
+<%= link_to 'Back', sites_path %>

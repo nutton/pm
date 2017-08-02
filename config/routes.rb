@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :sites
+  resources :customers
   resources :configurations
   resources :vendors
   root to: 'static#root'

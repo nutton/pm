@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sitename: MyString
+  siteaddress: MyString
+  city_id: 1
+  internal_site: 1
+  customer_id: 1
+
+two:
+  sitename: MyString
+  siteaddress: MyString
+  city_id: 1
+  internal_site: 1
+  customer_id: 1
