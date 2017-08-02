@@ -57,7 +57,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # custom gems
 gem 'haml'
 gem 'email_validator'
-gem 'bootstra386-rails'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'jquery-ui-rails'
