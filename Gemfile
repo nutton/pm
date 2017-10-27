@@ -63,3 +63,4 @@ gem 'jquery-ui-rails'
 gem 'jquery-rails'
 gem 'acts_as_tree'
 gem 'rails-erd', require: false, group: :development
+gem 'pg'
