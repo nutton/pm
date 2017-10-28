@@ -57,10 +57,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # custom gems
 gem 'haml'
 gem 'email_validator'
-gem 'bootstrap-sass'
+#gem 'bootstrap-sass'
 gem 'devise'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
 gem 'acts_as_tree'
 gem 'rails-erd', require: false, group: :development
 gem 'pg'
+gem 'materialize-sass'
